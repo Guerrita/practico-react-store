@@ -1,13 +1,12 @@
-import React from 'react'
-import { Header } from '../components/Header'
+import React from 'react';
+import ProductList from '../containers/ProductList';
 
-export const Home = () => {
-  return (
-    <div>
-      <Header/>
-        <h1>
-            react shop
-        </h1>
-    </div>
-  )
+const Home = () => {
+	return (
+		<>
+			<ProductList />
+		</>
+	);
 }
+
+export default Home;
