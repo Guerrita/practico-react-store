@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { Z_PARTIAL_FLUSH } = require('zlib');
 
 module.exports = {
 	entry: './src/index.js',
@@ -12,6 +13,13 @@ module.exports = {
 	mode: 'development',
 	resolve: {
 		extensions: ['.js', '.jsx'],
+		alias: {
+			'@components' : path.resolve(__dirname, 'src/components/'),
+			'@containers' : path.resolve(__dirname, 'src/containers/'),
+			'@styles' : path.resolve(__dirname, 'src/styles/'),
+			'@icons' : path.resolve(__dirname, 'src/assets/icons/'),
+			'@logos' : path.resolve(__dirname, 'src/assets/logos/'),
+		}
 	},
 	module: {
 		rules: [
@@ -37,6 +45,10 @@ module.exports = {
 					"css-loader",
 					"sass-loader",
 				],
+			},
+			{
+				test: /\.(png|svg|jpg|gif)$/,
+				type: 'asset'
 			}
 		]
 	},
