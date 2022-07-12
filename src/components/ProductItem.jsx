@@ -13,7 +13,6 @@ const ProductItem = ({product}) => {
 
 	return (
 		<div className="ProductItem">
-		{console.log(product)}
 			<img src={product.images[0]} alt={product.title} />
 			<div className="product-info">
 				<div>
@@ -21,7 +20,7 @@ const ProductItem = ({product}) => {
 					<p>{product.title}</p>
 				</div>
 				<figure onClick={ () => handleClick(product)}>
-					<img src={cartImge} alt="Add to cart" />
+					<img src={cartImage} alt="Add to cart" />
 				</figure>
 			</div>
 		</div>

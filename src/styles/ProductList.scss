@@ -2,10 +2,10 @@
 
 .ProductList {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 240px);
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 26px;
-	place-content: center;
-	margin: 3em 0 0 0;
+	margin: 50px auto;
+	width: 90%;
 }
 
 @media (max-width: 640px) {

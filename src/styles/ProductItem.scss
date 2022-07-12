@@ -8,6 +8,11 @@
 	height: 240px;
 	border-radius: 20px;
 	object-fit: cover;
+	transition: transform .2s;
+}
+
+.ProductItem img:hover{
+	transform: scale(1.05);
 }
 .product-info {
 	display: flex;
@@ -21,6 +26,12 @@
 .product-info figure img {
 	width: 35px;
 	height: 35px;
+	transition: transform .2s;
+}
+
+.product-info figure img:hover{
+	cursor: pointer;
+	transform: scale(1.2);
 }
 .product-info div p:nth-child(1) {
 	font-weight: bold;

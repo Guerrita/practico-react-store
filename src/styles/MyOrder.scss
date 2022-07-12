@@ -1,11 +1,19 @@
 @import 'vars';
 
 .MyOrder {
+	background-color: #fff;
+	border: 1px solid var(--very-light-pink);
 	width: 360px;
 	padding: 24px;
 	box-sizing: border-box;
 	position: absolute;
+	border-radius: 6px ;
+	top:60px;
 	right: 0;
+	overflow-y: scroll;
+	overscroll-behavior-y: contain;
+	max-height: fit-content;
+	height: 500px;
 }
 .title-container {
 	display: flex;
