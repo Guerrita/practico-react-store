@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import '@styles/NotFound.scss'
 
 const NotFound = () => {
-	return (
-		<div>
-			No encontrado, error 404.
-		</div>
-	);
-}
+  return (
+    <div className="not-found-container">
+      <h1>404 Error</h1>
+      <h3>Not Found</h3>
+    </div>
+  );
+};
 
 export default NotFound;
