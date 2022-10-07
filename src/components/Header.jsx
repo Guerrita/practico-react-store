@@ -24,15 +24,6 @@ const Header = () => {
           <li>
             <a href="/">Medicos</a>
           </li>
-          <li>
-            <a href="/"></a>
-          </li>
-          <li>
-            <a href="/"></a>
-          </li>
-          <li>
-            <a href="/"></a>
-          </li>
         </ul>
       </div>
       <div className="navbar-right">
