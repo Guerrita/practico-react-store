@@ -36,15 +36,15 @@
 	margin-bottom: 4px;
 }
 .value {
-	color: var(--very-light-pink);
+	color: var(--third-color);
 	font-size: var(--md);
 	margin: 8px 0 32px 0;
 }
 .secondary-button {
 	background-color: var(--white);
 	border-radius: 8px;
-	border: 1px solid var(--hospital-green);
-	color: var(--hospital-green);
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
 	width: 100%;
 	cursor: pointer;
 	font-size: var(--md);

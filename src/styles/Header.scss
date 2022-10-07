@@ -4,7 +4,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	padding: 0 24px;
-	border-bottom: 1px solid var(--very-light-pink);
+	border-bottom: 1px solid var(--grey);
 	position: sticky;
 	top: 0;
 	background-color: #fff;
@@ -38,18 +38,18 @@ nav {
 .navbar-left ul li a,
 .navbar-right ul li a {
 	text-decoration: none;
-	color: var(--very-light-pink);
+	color: var(--third-color);
 	border: 1px solid var(--white);
 	padding: 8px;
 	border-radius: 8px;
 }
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
-	border: 1px solid var(--hospital-green);
-	color: var(--hospital-green);
+	border: 1px solid var(--grey);
+	color: var(--primary-color);
 }
 .navbar-email {
-	color: var(--very-light-pink);
+	color: var(--third-color);
 	font-size: var(--sm);
 	margin-right: 12px;
 }
@@ -63,7 +63,7 @@ nav {
 .navbar-shopping-cart div {
 	width: 16px;
 	height: 16px;
-	background-color: var(--hospital-green);
+	background-color: var(--primary-color);
 	border-radius: 50%;
 	font-size: var(--sm);
 	font-weight: bold;

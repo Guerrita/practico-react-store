@@ -24,7 +24,7 @@
 	grid-template-columns: auto 1fr;
 	gap: 16px;
 	align-items: center;
-	background-color: var(--text-input-field);
+	background-color: var(--grey);
 	margin-bottom: 24px;
 	border-radius: 8px;
 	padding: 0 24px;
@@ -39,7 +39,7 @@
 }
 .order p span:nth-child(2) {
 	font-size: var(--sm);
-	color: var(--very-light-pink);
+	color: var(--third-color);
 }
 .order p:nth-child(2) {
 	text-align: end;
