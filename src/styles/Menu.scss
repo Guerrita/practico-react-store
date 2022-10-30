@@ -4,12 +4,15 @@
 	width: 100px;
 	height: auto;
 	border: 1px solid var(--third-color);
-	border-radius: 6px;
+	border-radius: 0 0 6px 6px ;
+	border-top: none;
 	padding: 20px 20px 0 20px;
 	position: absolute;
-	top: 60px;
-	right: 50px;
-	background-color: #fff;
+	top: 62px;
+	width: 140px;
+	right: 24px;
+	background-color: var(--black);
+	color: var(--third-color);;
 }
 .Menu ul {
 	list-style: none;
@@ -18,7 +21,7 @@
 
 }
 .Menu ul li {
-	text-align: end;
+	text-align: left;
 }
 .Menu ul li:nth-child(1),
 .Menu ul li:nth-child(2) {
@@ -29,7 +32,6 @@
 	border-top: 1px solid var(--third-color);
 }
 .Menu ul li:last-child a {
-	color: var(--primary-color);
 	font-size: var(--sm);
 }
 .Menu ul li a {

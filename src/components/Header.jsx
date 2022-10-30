@@ -1,38 +1,42 @@
 import React, { useState, useContext } from "react";
 import "@styles/Header.scss";
-
-import menu from "@icons/icon_menu.svg";
-import logo from "@logos/logo_yard_sale.svg";
-import shoppingCart from "@icons/icon_shopping_cart.svg";
+import { NavLink } from "react-router-dom";
 import Menu from "@components/Menu";
 
 import AppContext from "../context/AppContext";
+import menu from "@logos/Logo-nobg.png";
 
 const Header = () => {
+  const [toggle, setToggle] = useState(false);
 
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
 
   return (
     <nav>
       <div className="navbar-left">
+      <img src={menu} alt="menu" className="menu" />
         <ul>
           <li>
-            <a href="/">Home</a>
+          <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a href="/">Pacientes</a>
+            <NavLink to="/patients">Pacientes</NavLink>
           </li>
           <li>
-            <a href="/">Medicos</a>
+            <NavLink to="/doctors">Médicos</NavLink>
           </li>
         </ul>
       </div>
       <div className="navbar-right">
         <ul>
-          <li className="navbar-email">
+          <li className="navbar-email" onClick={handleToggle}>
             medico@example.com
           </li>
         </ul>
       </div>
+      {toggle && <Menu />}
     </nav>
   );
 };
