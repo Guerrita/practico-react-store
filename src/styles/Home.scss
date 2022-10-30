@@ -1,19 +1,40 @@
-@import 'vars';
+@import "vars";
 
-.banner h1{
+.banner h1 {
   font-size: 2.4rem;
 }
 
-.banner{
+.banner {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
   align-items: center;
-  background: rgb(138,227,235);
-  background: linear-gradient(180deg, rgba(138,227,235,1) 0%, rgba(255,255,255,1) 100%);
+  background: rgb(138, 227, 235);
+  background: linear-gradient(
+    180deg,
+    rgba(138, 227, 235, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
-.doctores{
+.doctores {
   height: 50vh;
+}
+
+.information-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+}
+
+.card {
+  border-radius: 35px;
+  width: 300px;
+  min-height: 300px;
+  background: #ffffff;
+  box-shadow:  23px 23px 46px #828282,
+               -23px -23px 46px #ffffff;
+  margin: auto;
 }
