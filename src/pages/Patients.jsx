@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from "react";
-// import ItemList from "@containers/ItemList";
-import banner from "@logos/optimized-banner.jpg";
-// import useGetItems from "../Hooks/useGetItem";
-// import {Character} from "@components/Character";
+import React, { useEffect, useState } from "react";
+import "@styles/Patients.scss";
+import { NavLink } from "react-router-dom";
+
+
+import banner from "@logos/Doctor measuring blood pressure to male patient.png";
 
 
 
@@ -13,16 +14,14 @@ const Patients = () => {
   //let { info, results } = allItems;
 
   return (
-    <section>
-    
-      <img className="banner" src={banner} />
-        {/* 
-      <ItemList >
-      {results?.map(character => (
-          <Character character = {character} key= {character.id}/>
-        ))}
-      </ItemList>
-      <button onClick={() => {updatePageNumber(pageNumber+1);}}>Click me</button> */}
+    <section className='banner'>
+      <div>
+        <h2 className=''>¡Bienvenido a la sección de pacientes!</h2>
+        <h5>Acá podrás observar todos los pacientes que se han atendido y podras agregar más</h5>
+        <NavLink to="/add-patient"><button className="primary-button">Agregar paciente</button></NavLink>
+      </div>
+      <img className="banner-image" alt="Pacientes" src={banner}  />
+
     </section>
   );
 };

@@ -1,26 +1,22 @@
 import React, {useEffect, useState} from "react";
-// import ItemList from "@containers/ItemList";
-// import banner from "@assets/banner.png";
-// import useGetItems from "../Hooks/useGetItem";
-// import {Character} from "@components/Character";
+import { NavLink } from "react-router-dom";
+import "@styles/Doctors.scss";
 
+
+import banner from "@logos/doctor-heart.png";
 
 
 const Doctors = () => {
-  //let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
-  //let allItems = useGetItems(api)
-  //let [fetchedData, updateFetchedData] = useState([]);
-  //let { info, results } = allItems;
 
   return (
-    <section>
-        {/* <img className="characters-banner" src={banner} />
-      <ItemList >
-      {results?.map(character => (
-          <Character character = {character} key= {character.id}/>
-        ))}
-      </ItemList>
-      <button onClick={() => {updatePageNumber(pageNumber+1);}}>Click me</button> */}
+    <section className='banner'>
+      <div>
+        <h2 className=''>¡Bienvenido a la sección de Médicos!</h2>
+        <h5>Acá podrás observar todos los médicos que trabajan en urgencias y podrás agregar más</h5>
+        <NavLink to="/add-doctor"><button className="primary-button">Agregar médico</button></NavLink>
+      </div>
+      <img className="banner-image" alt="Doctor y Corazon" src={banner}  />
+
     </section>
   );
 };

@@ -21,7 +21,6 @@ const AddPatient = () => {
 	function handleData(event) {
 		const newPatient = { ...patient };
 		newPatient[event.target.id] = event.target.value;
-		console.log(event.target.value)
 		setPatient(newPatient)
 		console.log(newPatient);
 	}

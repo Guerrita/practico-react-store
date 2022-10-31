@@ -14,6 +14,8 @@ import CreateAccount from '../pages/CreateAccount';
 import NotFound from '../pages/NotFound';
 import '@styles/global.css';
 import AppContext from '../context/AppContext';
+import AddConsultation from '../pages/AddConsultation';
+import AddMedicine from '../pages/AddMedicine';
 //import useInitialState from '../hooks/useInitialState'
 
 const App = () => {
@@ -28,11 +30,13 @@ const App = () => {
 					<Route exact path="/password-recovery" component={PasswordRecovery} />
 					<Route exact path="/new-password" component={NewPassword} />
 					<Route exact path="/account" component={MyAccount} />
-					<Route exact path="/signup" component={CreateAccount} />
+					<Route exact path="/sign-up" component={CreateAccount} />
 					<Route exact path="/patients" component={Patients} />
 					<Route exact path="/doctors" component={Doctors} />
 					<Route exact path="/add-patient" component={AddPatient} />
 					<Route exact path="/add-doctor" component={AddDoctor} />
+					<Route exact path="/add-consultation" component={AddConsultation} />
+					<Route exact path="/add-medicine" component={AddMedicine} />
 					<Route path="*" component={NotFound} />
 				</Switch>
 			</Layout>

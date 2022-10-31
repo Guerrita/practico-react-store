@@ -11,3 +11,43 @@ html{
 p, a, li{
 	font-size: 1.4rem;
 }
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  background: rgb(138, 227, 235);
+  background: linear-gradient(
+    180deg,
+    rgba(138, 227, 235, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.primary-button {
+	background-color: var(--black);
+	border-radius: 8px;
+	border: none;
+	color: var(--third-color);
+	width: 80%;
+	cursor: pointer;
+	font-size: var(--md);
+	font-weight: bold;
+	height: 50px;
+  transition: 0.3s;
+}
+
+.primary-button:hover{
+  background-color: var(--third-color);
+	color: var(--black);
+}
+
+.login-button {
+	margin: 14px auto 30px auto;
+}
+
+.banner-image{
+  height: 50vh;
+}

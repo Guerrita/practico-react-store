@@ -15,7 +15,7 @@ const Home = () => {
 					<h1 className=''>¡Bienvenido a Urgencias Rurales!</h1>
 					<h5>Con este sistema podras gestionar todo lo relacionado con el sistema de urgencias de tu centro hospitalario </h5>
 				</div>
-				<img src={banner} alt="doctores" className="doctores" />
+				<img src={banner} alt="doctores" className="banner-image" />
 			</section>
 			<section className='information-cards'>
 				<article className='card'>
