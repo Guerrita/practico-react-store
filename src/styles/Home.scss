@@ -26,7 +26,8 @@
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 30px;
+  margin: 30px auto;
+  max-width: 85%;
 }
 
 .card {
@@ -34,7 +35,13 @@
   width: 300px;
   min-height: 300px;
   background: #ffffff;
-  box-shadow:  23px 23px 46px #828282,
-               -23px -23px 46px #ffffff;
+  box-shadow: 23px 23px 46px #828282, -23px -23px 46px #ffffff;
   margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  box-sizing: border-box;
 }

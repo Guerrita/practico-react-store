@@ -8,17 +8,18 @@ import NewPassword from '../pages/NewPassword';
 import MyAccount from '../pages/MyAccount';
 import AddPatient from '../pages/AddPatient';
 import Patients from '../pages/Patients';
+import AddDoctor from '../pages/AddDoctor';
 import Doctors from '../pages/Doctors';
 import CreateAccount from '../pages/CreateAccount';
 import NotFound from '../pages/NotFound';
 import '@styles/global.css';
 import AppContext from '../context/AppContext';
-import useInitialState from '../hooks/useInitialState'
+//import useInitialState from '../hooks/useInitialState'
 
 const App = () => {
-	const initialState = useInitialState();
+	//const initialState = useInitialState();
 	return (
-		<AppContext.Provider value={initialState}>
+		<AppContext.Provider >
 		<BrowserRouter>
 			<Layout>
 				<Switch>
@@ -31,6 +32,7 @@ const App = () => {
 					<Route exact path="/patients" component={Patients} />
 					<Route exact path="/doctors" component={Doctors} />
 					<Route exact path="/add-patient" component={AddPatient} />
+					<Route exact path="/add-doctor" component={AddDoctor} />
 					<Route path="*" component={NotFound} />
 				</Switch>
 			</Layout>

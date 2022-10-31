@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import '@styles/CreateForm.scss';
 
-const AddPatient = () => {
+const AddDoctor = () => {
 	const url = "";
-	const [patient, setPatient] = useState({
-		id: "",
+	const [doctor, setDoctor] = useState({
+    id: "",
 		name: "",
 		lastname: "",
 		birthdate: "",
@@ -13,31 +13,29 @@ const AddPatient = () => {
 		municipality: "",
 		address: "",
 		RH: "",
-		height: "",
-		weight: "",
-		allergies: "",
-	})
+		specialty: "",
+		schedule: "",
+	}) 
 
-	function handleData(event) {
-		const newPatient = { ...patient };
-		newPatient[event.target.id] = event.target.value;
-		console.log(event.target.value)
-		setPatient(newPatient)
-		console.log(newPatient);
-	}
+function handleData(event) {
+	const newDoctor = {...doctor};
+	newDoctor[event.target.id] = event.target.value;
+	setDoctor(newDoctor)
+	console.log(newDoctor);
+}
 
 
 	return (
 		<div className="CreateForm">
 			<div className="CreateForm-container">
-				<h1 className="title">Agregar Paciente</h1>
+				<h1 className="title">Agregar Médico</h1>
 				<form action="/" className="form">
 					<div>
 						<label for="id" className="label">Cédula</label>
 						<input required onChange={(event) => handleData(event)} type="number" id="id" placeholder="Cédula" className="input input-id" />
 						<label for="name" className="label">Nombre</label>
 						<input required onChange={(event) => handleData(event)} type="text" id="name" placeholder="Nombres" className="input input-name" />
-						<label for="lastname" className="label">Apellidos</label>
+            <label for="lastname" className="label">Apellidos</label>
 						<input required onChange={(event) => handleData(event)} type="text" id="lastname" placeholder="Apellidos" className="input input-lastname" />
 						<label for="birthdate" className="label">Fecha de nacimiento</label>
 						<input required onChange={(event) => handleData(event)} type="date" id="birthdate" placeholder="Fecha de nacimiento" className="input input-birthdate" />
@@ -60,17 +58,10 @@ const AddPatient = () => {
 							<option value="AB-">AB-</option>
 							<option value="AB+">AB+</option>
 						</select>
-						<label for="height" className="label">Altura</label>
-						<input onChange={(event) => handleData(event)} type="number" id="height" placeholder="Altura" className="input input-height" />
-						<label for="weight" className="label">Peso</label>
-						<input onChange={(event) => handleData(event)} type="number" id="weight" placeholder="Peso" className="input input-weight" />
-						<label for="allergies" className="label">Alergias</label>
-						<textarea onChange={(event) => handleData(event)} type="number" id="allergies" placeholder="Alergias" className="input input-allergies" />
-
-						{/* <label for="email" className="label">Email</label>
-						<input type="text" id="email" placeholder="medico@example.com" className="input input-email" />
-						<label for="password" className="label">Password</label>
-						<input type="password" id="password" placeholder="*********" className="input input-password" /> */}
+						<label for="specialty" className="label">Especialidad</label>
+						<input onChange={(event) => handleData(event)} type="text" id="specialty" placeholder="Especialidad" className="input input-specialty" />
+						<label for="schedule" className="label">Horario</label>
+						<textarea onChange={(event) => handleData(event)} type="text" id="schedule" placeholder="Horario" className="input input-schedule" />
 					</div>
 					<input type="submit" value="Crear Paciente" className="primary-button login-button" />
 				</form>
@@ -79,4 +70,4 @@ const AddPatient = () => {
 	);
 }
 
-export default AddPatient; 
+export default AddDoctor; 
